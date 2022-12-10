@@ -36,7 +36,7 @@ extern "C" {
 
 // Pin number
 // This array allows to wrap Arduino pin number(Dx or x)
-// to STM32 PinName (PX_n)
+// to STM8 PinName (PX_n)
 
 const PinName digitalPin[] = {
     //PX_n, //Dx
@@ -95,16 +95,16 @@ const PinName digitalPin[] = {
     PB_1, //D47/A4
     PB_0, //D48/A5
         // Duplicated pins in order to be aligned with PinMap_ADC
-    PB_6, //D49/A6 = D29
-    PB_7, //D50/A7 = D28
+    PB_6, //D49/A6 = D28
+    PB_7, //D50/A7 = D27
     PE_6, //D51/A8 = D19
     PE_7, //D52/A9 = D18
-    PF_0, //D53/A10 = D36
-    PF_3, //D54/A11 = D35
-    PF_4, //D55/A12 = D34
-    PF_5, //D56/A13 = D33
-    PF_6, //D57/A14 = D32
-    PF_7 //D58/A15 = D31
+    PF_0, //D53/A10 = D35
+    PF_3, //D54/A11 = D34
+    PF_4, //D55/A12 = D33
+    PF_5, //D56/A13 = D32
+    PF_6, //D57/A14 = D31
+    PF_7 //D58/A15 = D30
 };
 
 #ifdef __cplusplus
