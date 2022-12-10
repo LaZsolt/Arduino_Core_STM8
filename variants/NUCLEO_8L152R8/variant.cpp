@@ -37,7 +37,7 @@ extern "C" {
 
 // Pin number
 // This array allows to wrap Arduino pin number(Dx or x)
-// to STM32 PinName (PX_n)
+// to STM8 PinName (PX_n)
 
 const PinName digitalPin[] = {
     //PX_n, //Dx
