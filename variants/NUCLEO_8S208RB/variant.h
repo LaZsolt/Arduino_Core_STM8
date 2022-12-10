@@ -102,16 +102,16 @@ enum {
     PB1, //D47/A4
     PB0, //D48/A5
     // Duplicated pins in order to be aligned with PinMap_ADC
-    PB6_2, //D49/A6 = D29
-    PB7_2, //D50/A7 = D28
+    PB6_2, //D49/A6 = D28
+    PB7_2, //D50/A7 = D27
     PE6_2, //D51/A8 = D19
     PE7_2, //D52/A9 = D18
-    PF0_2, //D53/A10 = D36
-    PF3_2, //D54/A11 = D35
-    PF4_2, //D55/A12 = D34
-    PF5_2, //D56/A13 = D33
-    PF6_2, //D57/A14 = D32
-    PF7_2, //D58/A15 = D31
+    PF0_2, //D53/A10 = D35
+    PF3_2, //D54/A11 = D34
+    PF4_2, //D55/A12 = D33
+    PF5_2, //D56/A13 = D32
+    PF6_2, //D57/A14 = D31
+    PF7_2, //D58/A15 = D30
     PEND
 };
 
