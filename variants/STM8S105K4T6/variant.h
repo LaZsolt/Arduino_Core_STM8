@@ -122,8 +122,8 @@ enum {
 #define SERIAL_UART_INSTANCE    1 //Connected to ST-Link
 // Default pin used for 'Serial' instance (ex: ST-Link)
 
-#define PIN_SERIAL_RX       PD_6
-#define PIN_SERIAL_TX       PD_5
+#define PIN_SERIAL2_RX       PD_6
+#define PIN_SERIAL2_TX       PD_5
 
 // Default pin used for Serial printed on Arduino connector
 // #define PIN_SERIAL3_RX           PD_6
