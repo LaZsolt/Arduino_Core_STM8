@@ -68,8 +68,8 @@ void (* const @vector _vectab[32])() = {
 	EXTI_PORTC_IRQHandler,			/* EXTI2       */
 	EXTI_PORTD_IRQHandler,			/* EXTI3       */
 	EXTI_PORTE_IRQHandler,			/* EXTI4       */
-	CAN_RX_IRQHandler,			/* CAN Rx interrupt    */
-	CAN_TX_IRQHandler,			/* CAN Tx interrupt    */
+	NonHandledInterrupt,			/* Reserved    */
+	NonHandledInterrupt,			/* Reserved    */
 	SPI_IRQHandler,				/* SPI         */
 	TIM1_UPD_OVF_TRG_BRK_IRQHandler,	/* TIMER 1 OVF */
 	TIM1_CAP_COM_IRQHandler,		/* TIMER 1 CAP */
