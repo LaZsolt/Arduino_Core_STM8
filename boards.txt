@@ -80,3 +80,269 @@ Nucleo_8L152R8.menu.xserial.none=Enabled without generic Serial
 Nucleo_8L152R8.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
 Nucleo_8L152R8.menu.xserial.disabled=Disabled (No Serial)
 Nucleo_8L152R8.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+Nucleo_8S207K8.menu.xserial.generic=Enabled with generic Serial
+Nucleo_8S207K8.menu.xserial.none=Enabled without generic Serial
+Nucleo_8S207K8.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
+Nucleo_8S207K8.menu.xserial.disabled=Disabled (No Serial)
+Nucleo_8S207K8.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+Discovery_STM8S.menu.xserial.generic=Enabled with generic Serial
+Discovery_STM8S.menu.xserial.none=Enabled without generic Serial
+Discovery_STM8S.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
+Discovery_STM8S.menu.xserial.disabled=Disabled (No Serial)
+Discovery_STM8S.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+Discovery_STM8SVL.menu.xserial.generic=Enabled with generic Serial
+Discovery_STM8SVL.menu.xserial.none=Enabled without generic Serial
+Discovery_STM8SVL.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
+Discovery_STM8SVL.menu.xserial.disabled=Disabled (No Serial)
+Discovery_STM8SVL.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+Gen_8L050J3.menu.xserial.generic=Enabled with generic Serial
+Gen_8L050J3.menu.xserial.none=Enabled without generic Serial
+Gen_8L050J3.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
+Gen_8L050J3.menu.xserial.disabled=Disabled (No Serial)
+Gen_8L050J3.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+Gen_8L151G4U.menu.xserial.generic=Enabled with generic Serial
+Gen_8L151G4U.menu.xserial.none=Enabled without generic Serial
+Gen_8L151G4U.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
+Gen_8L151G4U.menu.xserial.disabled=Disabled (No Serial)
+Gen_8L151G4U.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+Gen_8S103F3P.menu.xserial.generic=Enabled with generic Serial
+Gen_8S103F3P.menu.xserial.none=Enabled without generic Serial
+Gen_8S103F3P.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
+Gen_8S103F3P.menu.xserial.disabled=Disabled (No Serial)
+Gen_8S103F3P.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+Gen_8S105K4T.menu.xserial.generic=Enabled with generic Serial
+Gen_8S105K4T.menu.xserial.none=Enabled without generic Serial
+Gen_8S105K4T.menu.xserial.none.build.xSerial=-dHWSERIAL_NONE
+Gen_8S105K4T.menu.xserial.disabled=Disabled (No Serial)
+Gen_8S105K4T.menu.xserial.disabled.build.xSerial=-dNO_HWSERIAL
+
+################################################################################
+# Nucleo 8S207K8 Board
+
+Nucleo_8S207K8.name=Nucleo-8S207K8
+
+Nucleo_8S207K8.build.core=arduino
+Nucleo_8S207K8.build.board=Nucleo_8S207K8
+Nucleo_8S207K8.build.extra_flags=-d{build.product_line} {build.xSerial}
+
+# Nucleo_8S207K8 board
+# Support: Serial1 (USART2 on PD6, PD5)
+Nucleo_8S207K8=Nucleo-8S207K8
+Nucleo_8S207K8.device=STM8S207K8
+Nucleo_8S207K8.node=NODE_8S207
+Nucleo_8S207K8.upload.maximum_size=65536
+Nucleo_8S207K8.upload.maximum_data_size=6144
+Nucleo_8S207K8.build.mcu=8-bit
+Nucleo_8S207K8.build.board=Nucleo_8S207K8
+Nucleo_8S207K8.build.series=STM8Sxx
+Nucleo_8S207K8.build.splibraryPrefix=_StdPeriph_Driver
+Nucleo_8S207K8.build.product_line=STM8S207
+Nucleo_8S207K8.build.variant=NUCLEO_8S207K8
+Nucleo_8S207K8.build.f_cpu=16000000
+
+Nucleo_8S207K8.menu.upload_method.MassStorage=Mass Storage
+Nucleo_8S207K8.menu.upload_method.MassStorage.upload.protocol=
+Nucleo_8S207K8.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Nucleo_8S207K8.menu.upload_method.stm8Flasher=stm8Flasher
+Nucleo_8S207K8.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
+Nucleo_8S207K8.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
+
+################################################################################
+# STM8S-DISCOVERY Board
+
+Discovery_STM8S.name=STM8S-DISCOVERY
+
+Discovery_STM8S.build.core=arduino
+Discovery_STM8S.build.board=Discovery_STM8S
+Discovery_STM8S.build.extra_flags=-d{build.product_line} {build.xSerial}
+
+# Discovery_STM8S board
+# Support: Serial1 (USART2 on PD6, PD5)
+Discovery_STM8S=STM8S-DISCOVERY
+Discovery_STM8S.device=STM8S105C6
+Discovery_STM8S.node=NODE_8S105
+Discovery_STM8S.upload.maximum_size=32768
+Discovery_STM8S.upload.maximum_data_size=2048
+Discovery_STM8S.build.mcu=8-bit
+Discovery_STM8S.build.board=Discovery_STM8S
+Discovery_STM8S.build.series=STM8Sxx
+Discovery_STM8S.build.splibraryPrefix=_StdPeriph_Driver
+Discovery_STM8S.build.product_line=STM8S105
+Discovery_STM8S.build.variant=DISCOVERY_STM8S
+Discovery_STM8S.build.f_cpu=16000000
+
+Discovery_STM8S.menu.upload_method.MassStorage=Mass Storage
+Discovery_STM8S.menu.upload_method.MassStorage.upload.protocol=
+Discovery_STM8S.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Discovery_STM8S.menu.upload_method.stm8Flasher=stm8Flasher
+Discovery_STM8S.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
+Discovery_STM8S.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
+
+################################################################################
+# STM8SVLDISCOVERY Board
+
+Discovery_STM8SVL.name=STM8SVLDISCOVERY
+
+Discovery_STM8SVL.build.core=arduino
+Discovery_STM8SVL.build.board=Discovery_STM8SVL
+Discovery_STM8SVL.build.extra_flags=-d{build.product_line} {build.xSerial}
+
+# Discovery_STM8SVL board
+# Support: Serial1 (USART1 on PD6, PD5)
+Discovery_STM8SVL=STM8SVLDISCOVERY
+Discovery_STM8SVL.device=STM8S103K3
+Discovery_STM8SVL.node=NODE_8S103
+Discovery_STM8SVL.upload.maximum_size=8192
+Discovery_STM8SVL.upload.maximum_data_size=1024
+Discovery_STM8SVL.build.mcu=8-bit
+Discovery_STM8SVL.build.board=Discovery_STM8SVL
+Discovery_STM8SVL.build.series=STM8Sxx
+Discovery_STM8SVL.build.splibraryPrefix=_StdPeriph_Driver
+Discovery_STM8SVL.build.product_line=STM8S103
+Discovery_STM8SVL.build.variant=DISCOVERY_STM8SVL
+Discovery_STM8SVL.build.f_cpu=16000000
+
+Discovery_STM8SVL.menu.upload_method.MassStorage=Mass Storage
+Discovery_STM8SVL.menu.upload_method.MassStorage.upload.protocol=
+Discovery_STM8SVL.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Discovery_STM8SVL.menu.upload_method.stm8Flasher=stm8Flasher
+Discovery_STM8SVL.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
+Discovery_STM8SVL.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
+
+################################################################################
+# SOT8 STM8L050J3
+
+Gen_8L050J3.name=Generic STM8L050J3
+
+Gen_8L050J3.build.core=arduino
+Gen_8L050J3.build.board=Gen_8L050J3
+Gen_8L050J3.build.extra_flags=-d{build.product_line} {build.xSerial}
+
+# Generic STM8L050J3 boards
+# Support: Serial1 (USART1 on PA0, PA3)
+Gen_8L050J3=Generic STM8L050J3
+Gen_8L050J3.device=STM8L05xJ3
+Gen_8L050J3.node=NODE_8L050
+Gen_8L050J3.upload.maximum_size=8192
+Gen_8L050J3.upload.maximum_data_size=1024
+Gen_8L050J3.build.mcu=8-bit
+Gen_8L050J3.build.board=Gen_8L050J3
+Gen_8L050J3.build.series=STM8Lxx
+Gen_8L050J3.build.splibraryPrefix=_StdPeriph_Driver
+Gen_8L050J3.build.product_line=STM8L05X_LD_VL
+Gen_8L050J3.build.variant=STM8L050J3M3
+Gen_8L050J3.build.f_cpu=16000000
+
+Gen_8L050J3.menu.upload_method.MassStorage=Mass Storage
+Gen_8L050J3.menu.upload_method.MassStorage.upload.protocol=
+Gen_8L050J3.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Gen_8L050J3.menu.upload_method.stm8Flasher=stm8Flasher
+Gen_8L050J3.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
+Gen_8L050J3.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
+
+################################################################################
+# STM8L151G4Ux
+
+Gen_8L151G4U.name=Generic STM8L151G4U6
+
+Gen_8L151G4U.build.core=arduino
+Gen_8L151G4U.build.board=Gen_8L151G4U
+Gen_8L151G4U.build.extra_flags=-d{build.product_line} {build.xSerial}
+
+# Generic STM8L151G4Ux boards
+# Support: Serial1 (USART1 on PC2, PC3)
+Gen_8L151G4U=Generic STM8L151G4U6
+Gen_8L151G4U.device=STM8L15xG4
+Gen_8L151G4U.node=NODE_8L151
+Gen_8L151G4U.upload.maximum_size=16384
+Gen_8L151G4U.upload.maximum_data_size=2048
+Gen_8L151G4U.build.mcu=8-bit
+Gen_8L151G4U.build.board=Gen_8L151G4U
+Gen_8L151G4U.build.series=STM8Lxx
+Gen_8L151G4U.build.splibraryPrefix=_StdPeriph_Driver
+Gen_8L151G4U.build.product_line=STM8L15X_MD
+Gen_8L151G4U.build.variant=STM8L151G4U6
+Gen_8L151G4U.build.f_cpu=16000000
+
+Gen_8L151G4U.menu.upload_method.MassStorage=Mass Storage
+Gen_8L151G4U.menu.upload_method.MassStorage.upload.protocol=
+Gen_8L151G4U.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Gen_8L151G4U.menu.upload_method.stm8Flasher=stm8Flasher
+Gen_8L151G4U.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
+Gen_8L151G4U.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
+
+################################################################################
+# STM8S103F3Px
+
+Gen_8S103F3P.name=Generic STM8S103F3P6
+
+Gen_8S103F3P.build.core=arduino
+Gen_8S103F3P.build.board=Gen_8S103F3P
+Gen_8S103F3P.build.extra_flags=-d{build.product_line} {build.xSerial}
+
+# Generic STM8S103F3Px boards
+# Support: Serial1 (USART1 on PD6, PD5)
+Gen_8S103F3P=Generic STM8S103F3P6
+Gen_8S103F3P.device=STM8S103F3
+Gen_8S103F3P.node=NODE_8S103
+Gen_8S103F3P.upload.maximum_size=8192
+Gen_8S103F3P.upload.maximum_data_size=1024
+Gen_8S103F3P.build.mcu=8-bit
+Gen_8S103F3P.build.board=Gen_8S103F3P
+Gen_8S103F3P.build.series=STM8Sxx
+Gen_8S103F3P.build.splibraryPrefix=_StdPeriph_Driver
+Gen_8S103F3P.build.product_line=STM8S103
+Gen_8S103F3P.build.variant=STM8S103F3P6
+Gen_8S103F3P.build.f_cpu=16000000
+
+Gen_8S103F3P.menu.upload_method.MassStorage=Mass Storage
+Gen_8S103F3P.menu.upload_method.MassStorage.upload.protocol=
+Gen_8S103F3P.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Gen_8S103F3P.menu.upload_method.stm8Flasher=stm8Flasher
+Gen_8S103F3P.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
+Gen_8S103F3P.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
+
+################################################################################
+# STM8S105K4Tx
+
+Gen_8S105K4T.name=Generic STM8S105K4T6
+
+Gen_8S105K4T.build.core=arduino
+Gen_8S105K4T.build.board=Gen_8S105K4T
+Gen_8S105K4T.build.extra_flags=-d{build.product_line} {build.xSerial}
+
+# Generic STM8S105K4Tx boards
+# Support: Serial1 (USART2 on PD6, PD5)
+Gen_8S105K4T=Generic STM8S105K4T6
+Gen_8S105K4T.device=STM8S105K4
+Gen_8S105K4T.node=NODE_8S105
+Gen_8S105K4T.upload.maximum_size=32768
+Gen_8S105K4T.upload.maximum_data_size=2048
+Gen_8S105K4T.build.mcu=8-bit
+Gen_8S105K4T.build.board=Gen_8S105K4T
+Gen_8S105K4T.build.series=STM8Sxx
+Gen_8S105K4T.build.splibraryPrefix=_StdPeriph_Driver
+Gen_8S105K4T.build.product_line=STM8S105
+Gen_8S105K4T.build.variant=STM8S105K4T6
+Gen_8S105K4T.build.f_cpu=16000000
+
+Gen_8S105K4T.menu.upload_method.MassStorage=Mass Storage
+Gen_8S105K4T.menu.upload_method.MassStorage.upload.protocol=
+Gen_8S105K4T.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+Gen_8S105K4T.menu.upload_method.stm8Flasher=stm8Flasher
+Gen_8S105K4T.menu.upload_method.stm8Flasher.upload.protocol=stm8Tools
+Gen_8S105K4T.menu.upload_method.stm8Flasher.upload.tool=stm8Flasher
