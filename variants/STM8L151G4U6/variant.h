@@ -69,10 +69,10 @@ enum {
     PC1, //D19 SCL
     PC5, //D20
     PC6, //D21
-	PA0, //D22
-	PA1, //D23 NRST
+    PA0, //D22
+    PA1, //D23 NRST
     PA2, //D24
-	PA3  //D25
+    PA3,  //D25
     // Duplicated pins in order to be aligned with PinMap_ADC (none)
     PEND
 };
